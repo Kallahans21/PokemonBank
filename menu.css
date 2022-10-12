@@ -1,0 +1,258 @@
+*{ outline: none; }
+body
+{
+	text-align: center;
+	Justify-content: center;
+	background-image: url(neon2.png);
+	background-size: 100%;
+}
+.menu
+{
+	
+	background: rgba(200, 34, 250, 0.482)
+}
+
+section
+{
+	position: relative;
+	height: 10vh;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	border-radius: 10px;
+}
+section:before
+{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.482);
+	z-index: 1;
+	mix-blend-mode: color;
+}
+
+.title
+{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	text-transform: uppercase;
+	font-size: 18px;
+	filter: blur(0);
+	font-weight: 100;
+	text-shadow: 0 0 10px rgb(195, 0, 255),
+				 0 0 20px rgb(195, 0, 255),
+				 0 0 40px rgb(195, 0, 255),
+				 0 0 80px rgb(195, 0, 255),
+				 0 0 160px rgb(195, 0, 255),
+}
+
+.box a
+{
+	text-align: center;
+	Display: grid;
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px 10px 20px;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	text-decoration: none;
+	font-size: 20px;
+	overflow: hidden;
+	transition: 0.2s;
+	border: 1px solid #ffffff;
+	text-shadow: 0 0 10px rgb(195, 0, 255),
+				 0 0 20px rgb(195, 0, 255),
+				 0 0 40px rgb(195, 0, 255),
+				 0 0 80px rgb(195, 0, 255),
+				 0 0 160px rgb(195, 0, 255),
+}
+.box a:hover
+{
+	text-align: center;
+	Display: grid;
+	color: #fff;
+	background: #a10096;
+	box-shadow: 0 0 10px #a10096, 0 0 40px #070000, 0 0 80px #000000;
+	transition-delay: 0.5s;
+	border: 0;
+}
+
+.box a span
+{
+	position: absolute;
+	display: block;
+}
+.box a span:nth-child(1)
+{
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg, transparent, #a10096);
+
+}
+.box a:hover span:nth-child(1)
+{
+	left: 100%;
+	transition: 0.4s;
+}
+.box a span:nth-child(3)
+{
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg, transparent, #a10096);
+
+}
+.box a:hover span:nth-child(3)
+{
+	right: 100%;
+	transition: 0.5s;
+	transition-delay: 0.4s;
+}
+.box a span:nth-child(2)
+{
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg, transparent, #a10096);
+
+}
+.box a:hover span:nth-child(2)
+{
+	top: 100%;
+	transition: 0.5s;
+	transition-delay: 0.25s;
+}
+.box a span:nth-child(4)
+{
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg, transparent, #a10096);
+
+}
+.box a:hover span:nth-child(4)
+{
+	bottom: 100%;
+	transition: 0.5s;
+	transition-delay: 0.4s;
+}
+
+.botonNeon
+{
+	position: relative;
+	display: inline-block;
+	padding: 10px 20px;
+	border: 2px solid #ffffff;
+	margin: 0 0 0 50px;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 2px;
+	font-size: 12px;
+	transition: 0.2s;
+	transition-delay: 0s;
+	font-size: 10px;
+	width:180px;
+	height: 40px;
+	text-align: center;
+	
+}
+.botonNeon:hover
+{
+	color: #ffffff;
+	text-shadow: 2px 2px 2px rgb(0, 0, 0);
+	box-shadow: 0 0 10px #a10096,
+				0 0 20px #a10096,
+				0 0 40px #a10096,
+				0 0 80px #a10096,
+				0 0 160px #a10096;
+	transition-delay: 0.5s;
+
+}
+.botonNeon:nth-child(2)
+{
+	filter: hue-rotate(80deg);
+}
+.botonNeon::before
+{
+	content: '';
+	position: absolute;
+	left: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 2px;
+	background: #a10096;
+	box-shadow: 5px -8px 0 #a10096,
+				5px 8px 0 #a10096;
+	transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+	transition-delay: 0.5s, 0.5s,0s,0s;	
+}
+.botonNeon:hover::before
+{
+	width: 60%;
+	height: 100%;
+	left: -2px;
+	box-shadow: 5px 0 0 #a10096,
+				5px 0 0 #a10096;
+	transition-delay: 0s, 0.5s, 0.5s, 0.5s;
+}
+.botonNeon::after
+{
+	content: '';
+	position: absolute;
+	right: -20px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 20px;
+	height: 2px;
+	background: #a10096;
+	box-shadow: -5px -8px 0 #a10096,
+				-5px 8px 0 #a10096;
+	transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
+	transition-delay: 0.5s, 0.5s,0s,0s;	
+}
+.botonNeon:hover::after
+{
+	width: 60%;
+	height: 100%;
+	right: -2px;
+	box-shadow: -5px 0 0 #a10096,
+				-5px 0 0 #a10096;
+	transition-delay: 0s, 0.5s, 0.8s, 0.8s;
+}
+.botonNeon span
+{
+	color: #fff;
+	position: relative;
+	z-index: 100;
+}
+
+.botonNeon span:hover
+{
+	transition: 0.5s;
+}
+.botoncitos
+{
+	text-align: center!important;
+	margin-right: 5em;
+	margin-left: 9em;
+}
+
+H1 {
+	color: #ffffff;
+	text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}

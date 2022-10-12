@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Menú</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="stylesheet" href="menu.css">
+		<link rel = "icon" href = "icon.png" type = "image/x-icon">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.0.2/chart.js"></script>
+	</head>
+
+	<body>
+		<embed src="background.mp3" autostarty="true" loop="true" volume="100" width="px" height="0px">
+
+		<div class="container">
+
+			<nav class="navbar navbar-expand-lg navbar-dark menu mt-0">
+			  <section>
+			  	<div class="">
+			  		<h6 class="navbar-brand title" data-text='Acciones'>Kallahan Salas | XXXX-210537 </h6>
+			  	</div>
+			  </section>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="d-flex justify-content-end collapse navbar-collapse" id="navbarNav">
+			    <ul class=" navbar-nav">
+			      <li class="nav-item d-flex">
+			        <a class="nav-link botonNeon botonNeon1" id="buttonDatos" href="#"><span>USER</span></a>
+			      </li>
+			      <li class="nav-item d-flex">
+			        <a class="nav-link botonNeon botonNeon2" id="pdf" href="#"><span>RECORD</span></a>
+			      </li>
+			      <li class="nav-item d-flex">
+			        <a class="nav-link botonNeon botonNeon2" id="salirSesion" href="#"><span>LOGOUT</span></a>
+			      </li>
+			    </ul>
+			  </div>
+			</nav>
+			<div class="imagenes">
+				<img src="pokebank.png"
+			height="269"
+			 width="400">
+			 <br>
+			  <br>
+			  <br>
+			 <h1>Welcome to PokemonBank!</h1>
+			</div>
+			  <br>
+			  <br>
+			  <br>
+			  
+<div class="botoncitos">
+
+	<div class="row">
+				
+		<div class="row">
+			
+			<div class="row">
+				<div class=" ml-4 d-flex box justify-content-right">
+					<a href="#" id='depositar' class="align-self-center">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						DEPOSITS
+					</a>
+				</div>
+				<div class=" ml-4 d-flex box justify-content-center">
+					<a href="#" id='retirar' class="align-self-center">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						WITHDRAWALS
+					</a>
+				</div>
+			</div>
+
+			<div class="row ml-4 d-flex box justify-content-center">
+				<div class="ml-4 d-flex box justify-content-center">
+					<a href="#" id='consultarSaldo' class="align-self-center">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						BALANCE
+					</a>|
+				</div>
+				<div class=" ml-4 d-flex box justify-content-center">
+					<a href="#" id='pagarServicios' class="align-self-center">
+						<span></span>
+						<span></span>
+						<span></span>
+						<span></span>
+						PAY SERVICES
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+			
+
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+		<script src="../JS/Pantalla de acciones.js"></script>
+		<script src="../JS/jspdf.min.js"></script>
+			
+	</body>
+</html>

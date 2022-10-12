@@ -1,0 +1,35 @@
+*{ outline: none; }
+
+body
+{
+	text-align: center;
+	Justify-content: center;
+	background-image: url(neon2.png);
+	background-size: 100%;
+}
+
+.formulario
+{
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	border-radius: 5px;
+	margin-top: 100px;
+    font-family:"segoe UI Semibold";
+    font-size:  22px;
+}
+.imagen1
+{
+    text-align: center;
+	Justify-content: center;             
+}
+
+.pokemons{
+    display:display;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.sumbitbtn{
+    background-color: antiquewhite;
+}
