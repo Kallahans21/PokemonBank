@@ -81,7 +81,7 @@ section:before
 	color: #fff;
 	background: #a10096;
 	box-shadow: 0 0 10px #a10096, 0 0 40px #070000, 0 0 80px #000000;
-	transition-delay: 0.5s;
+	transition-delay: 0.2s;
 	border: 0;
 }
 
@@ -102,7 +102,7 @@ section:before
 .box a:hover span:nth-child(1)
 {
 	left: 100%;
-	transition: 0.4s;
+	transition: 0.2s;
 }
 .box a span:nth-child(3)
 {
@@ -116,8 +116,8 @@ section:before
 .box a:hover span:nth-child(3)
 {
 	right: 100%;
-	transition: 0.5s;
-	transition-delay: 0.4s;
+	transition: 0.2s;
+	transition-delay: 0.2s;
 }
 .box a span:nth-child(2)
 {
@@ -131,7 +131,7 @@ section:before
 .box a:hover span:nth-child(2)
 {
 	top: 100%;
-	transition: 0.5s;
+	transition: 0.2s;
 	transition-delay: 0.25s;
 }
 .box a span:nth-child(4)
@@ -146,7 +146,7 @@ section:before
 .box a:hover span:nth-child(4)
 {
 	bottom: 100%;
-	transition: 0.5s;
+	transition: 0.2s;
 	transition-delay: 0.4s;
 }
 
@@ -179,7 +179,7 @@ section:before
 				0 0 40px #a10096,
 				0 0 80px #a10096,
 				0 0 160px #a10096;
-	transition-delay: 0.5s;
+	transition-delay: 0.2s;
 
 }
 .botonNeon:nth-child(2)
@@ -198,8 +198,8 @@ section:before
 	background: #a10096;
 	box-shadow: 5px -8px 0 #a10096,
 				5px 8px 0 #a10096;
-	transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
-	transition-delay: 0.5s, 0.5s,0s,0s;	
+	transition: width 0.2s, left 0.2s, height 0.2s, box-shadow 0.5s;
+	transition-delay: 0.2s, 0.2s,0s,0s;	
 }
 .botonNeon:hover::before
 {
@@ -208,7 +208,7 @@ section:before
 	left: -2px;
 	box-shadow: 5px 0 0 #a10096,
 				5px 0 0 #a10096;
-	transition-delay: 0s, 0.5s, 0.5s, 0.5s;
+	transition-delay: 0s, 0.2s, 0.2s, 0.2s;
 }
 .botonNeon::after
 {
@@ -222,8 +222,8 @@ section:before
 	background: #a10096;
 	box-shadow: -5px -8px 0 #a10096,
 				-5px 8px 0 #a10096;
-	transition: width 0.5s, left 0.5s, height 0.5s, box-shadow 0.5s;
-	transition-delay: 0.5s, 0.5s,0s,0s;	
+	transition: width 0.2s, left 0.2s, height 0.2s, box-shadow 0.2s;
+	transition-delay: 0.2s, 0.2s,0s,0s;	
 }
 .botonNeon:hover::after
 {
@@ -232,7 +232,7 @@ section:before
 	right: -2px;
 	box-shadow: -5px 0 0 #a10096,
 				-5px 0 0 #a10096;
-	transition-delay: 0s, 0.5s, 0.8s, 0.8s;
+	transition-delay: 0s, 0.2s, 0.2s, 0.2s;
 }
 .botonNeon span
 {
@@ -243,7 +243,7 @@ section:before
 
 .botonNeon span:hover
 {
-	transition: 0.5s;
+	transition: 0.2s;
 }
 .botoncitos
 {
