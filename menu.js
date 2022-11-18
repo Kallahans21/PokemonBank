@@ -356,7 +356,7 @@ pdf.addEventListener('click', () =>
 	let lineas = 10;
 	let doc = new jsPDF();
 	lineas += 10;
-	doc.text(10,lineas, "RECORD - KETCHUM KETCHUM " + nombreMeses.fecha.getMonth() + fecha.getFullYear());
+	doc.text(10,lineas, "RECORD - KETCHUM KETCHUM + insertarfecha");
 	lineas += 10;
 	doc.text(20,lineas, "Deposits");
 	for(let i = 0; i < depositos.length; i++)
