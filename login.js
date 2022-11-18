@@ -7,7 +7,8 @@ loginbtn.addEventListener('click', () => {
 		location.href = "file:///C:/Users/asalas/Desktop/Miner%C3%ADa%20de%20datos/LIC/PROYECTO/PokemonBank/menu.html#"
 	}
 	else {
-		console.log("hola")
+		window.alert("Incorrect PIN!");
+	
 	}
 	
 })
