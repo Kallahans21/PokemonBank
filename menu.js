@@ -346,17 +346,13 @@ pagarServicios.addEventListener("click", () =>
 	})
 })
 
-const pdf = document.getElementById('pdf');
-const fecha = new Date();
-  const nombreMeses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
-    "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 
 pdf.addEventListener('click', () =>
 {
 	let lineas = 10;
 	let doc = new jsPDF();
 	lineas += 10;
-	doc.text(10,lineas, "RECORD - KETCHUM KETCHUM + insertarfecha");
+	doc.text(10,lineas, `RECORD - KETCHUM ${dayjs().format("MMMM D, YYYY")}`);
 	lineas += 10;
 	doc.text(20,lineas, "Deposits");
 	for(let i = 0; i < depositos.length; i++)
