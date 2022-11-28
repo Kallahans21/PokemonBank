@@ -124,7 +124,7 @@ depositar.addEventListener('click', () =>
 					footer: '<h6 class="text-muted"Successful deposit</h6>',
 					width: '35%', 
 					background:'#E9E7F0',
-					confirmButtonText: 'Awsome',
+					confirmButtonText: 'Awesome',
 					allowOutsideClick: false, 
 					allowEscapeKey: false, 
 					allowEnterKey: false, 
@@ -228,6 +228,7 @@ consultarSaldo.addEventListener("click", () =>
 	});	
 })
 
+
 pagarServicios.addEventListener("click", () =>
 {
 	let swalWithBootstrapButtons = Swal.mixin(
@@ -237,7 +238,7 @@ pagarServicios.addEventListener("click", () =>
 	});
 	swalWithBootstrapButtons.fire(
 	{
-		html: "<h2 class='text-dark'>Pay for services</h2>",
+		html: "<h2 class='text-dark'>Select Service</h2>",
 		icon: 'info',
 		footer: '<h6 class="text-muted">Choose one service</h6>',
 		width: '35%',
@@ -391,17 +392,3 @@ pdf.addEventListener('click', () =>
 	doc.save("Record-KETCHUM.pdf");
 })
 
-let ctx = document.getElementById("myChart").getContext("2d");
-let myChart = new Chart(ctx, 
-	{
-		type: "bar",
-		data: 
-		{
-			labels: ['col1', 'col2', 'col3'],
-			datasets: [
-			{
-				label: "Information",
-				data: [10,9,15]
-			}]
-		}
-	});
